@@ -87,7 +87,7 @@ function App() {
                       <p className="card-text">
                         {/* card inner body */}
                         {allUserName[item.houseKey].map((usersName)=>{
-                          return(<p>User: {usersName} 
+                          return(<p>Tenant: {usersName} 
                           
                             <button className="btn btn-sm btn-warning" onClick={()=>editFillName(item.houseKey, allUserName[item.houseKey].indexOf(usersName))}>Edit</button>
                             <button className="btn btn-sm btn-danger" onClick={()=>deleteUserOne(item.houseKey, allUserName[item.houseKey].indexOf(usersName))}>Delete</button>
